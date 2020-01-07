@@ -1,0 +1,437 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#"
+     xml:base="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#hasCoolingUnit -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#hasCoolingUnit">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#isCoolingUnitOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#Enclosure"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#CoolingUnit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#hasFailure -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#hasFailure">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#isFailureOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#Enclosure"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#Failure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#hasSeverity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#hasSeverity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#hasSolution -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#hasSolution">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#isSolutionFor"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#Failure"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#FailureSolution"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#hasWarning -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#hasWarning">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#isWarningOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#Enclosure"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#Warning"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#isCoolingUnitOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#isCoolingUnitOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#CoolingUnit"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#Enclosure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#isFailureOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#isFailureOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#Failure"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#Enclosure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#isSolutionFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#isSolutionFor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#FailureSolution"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#Failure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#isWarningOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#isWarningOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#Warning"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#Enclosure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#hasSpecificCost -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#hasSpecificCost">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#BuyNewScrews -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#BuyNewScrews">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#FailureSolution"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#ReplaceGrounding"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#CompactEnclosure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#CompactEnclosure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#Enclosure"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#hasFailure"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#MechanicFailure"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#CoolingUnit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#CoolingUnit"/>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#Danger -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#Danger">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#SeverityValuePartition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#ElectricFailure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#ElectricFailure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#Failure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#Enclosure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#Enclosure">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#hasCoolingUnit"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#CoolingUnit"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#hasFailure"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#Failure"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#Failure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#Failure">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#hasSolution"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#FailureSolution"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#FailureSolution -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#FailureSolution">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#hasSpecificCost"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#HighCostSolution -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#HighCostSolution">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#FailureSolution"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#hasSpecificCost"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">500</xsd:minInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#ITEnclosure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#ITEnclosure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#Enclosure"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#hasFailure"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#ElectricFailure"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#LooseDoorHinges -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#LooseDoorHinges">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#MechanicFailure"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#hasSolution"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#BuyNewScrews"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#LowCostSolution -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#LowCostSolution">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#FailureSolution"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#hasSpecificCost"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">500</xsd:maxExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#MechanicFailure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#MechanicFailure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#Failure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#NoPower -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#NoPower">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#ElectricFailure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#ReplaceGrounding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#ReplaceGrounding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#FailureSolution"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#SeverityValuePartition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#SeverityValuePartition">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#Danger"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#Warning"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#ValuePartition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#ValuePartition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#ValuePartition"/>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#Warning -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#Warning">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#SeverityValuePartition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#WrongGroundingValue -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#WrongGroundingValue">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#ElectricFailure"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#hasSeverity"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#Danger"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#hasSolution"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#ReplaceGrounding"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#ExampleSolution -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#ExampleSolution">
+        <rdf:type rdf:resource="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#ReplaceGrounding"/>
+        <hasSpecificCost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">600</hasSpecificCost>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#CoolingUnit"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#Enclosure"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#Failure"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#FailureSolution"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/daniel/ontologies/2019/11/untitled-ontology-8#Warning"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
