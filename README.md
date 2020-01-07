@@ -8,7 +8,7 @@ Tutorial for local installation:
 1. Follow Blazegraph installation guide to install the standard server at: https://wiki.blazegraph.com/wiki/index.php/Installation_guide
 
 2. Access the dashboard at: http://localhost:9999/blazegraph/ <br>
-	2.1. Load the RDF Data into the standard namespace by drag and dropping it into the 'UPDATE' tab.
+	2.1. Load the [RDF Data](https://github.com/dmntlr/pocknowledgewebapp/blob/master/Service.owl) into the standard namespace by drag and dropping it into the 'UPDATE' tab.
 3. A SPARQL REST-API for the knowledgebase is now accessible at: http://localhost:9999/bigdata/sparql
 
 4. Install Node.js
