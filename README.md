@@ -2,6 +2,7 @@
 Proof of concept for RDF Web Application with Blazegraph and React
 
 Demo: https://www.daniel-mantler.de/Projects/knowledge/
+![screenshot](https://user-images.githubusercontent.com/54062429/71923998-6e11d180-318e-11ea-8927-798ee13a90b8.png)
 
 Tutorial for local installation:
 
