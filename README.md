@@ -13,7 +13,7 @@ Tutorial for local installation:
 
 4. Install Node.js
 
-5. Run the following commands in the frontend folder <br>
+5. Run the following commands in the [frontend](https://github.com/dmntlr/pocknowledgewebapp/tree/master/frontend) folder <br>
 	5.1. 'npm install' <br>
 	5.2. 'npm start' 
 
