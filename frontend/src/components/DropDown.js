@@ -24,7 +24,7 @@ class DropDown extends Component {
       failures: [],
       response: {},
       dangerResponse: {},
-      selectedFailure: "",
+      failure: "",
       solutions: [],
       selectedSolution: "",
       danger : false
@@ -34,11 +34,13 @@ class DropDown extends Component {
   handleChangeEnclosure = event => {
     this.setState({solutions : []});
     this.setState({danger : false});
+    this.setState({enclosure : event.target.value})
     this.getFailuresForEnclosure(event.target.value);
   };
 
   handleChangeFailure = event => {
     this.getSolutionForFailure(event.target.value);
+    this.setState({failure : event.target.value})
   };
 
 
@@ -162,7 +164,7 @@ class DropDown extends Component {
         <FormControl className={classes.formControl}>
           <InputLabel>Failures</InputLabel>
           <Select
-            value={this.state.selectedFailure}
+            value={this.state.failure}
             onChange={this.handleChangeFailure}
           >
           {menuItemsFailures}
@@ -177,8 +179,8 @@ class DropDown extends Component {
           {menuItemsSolutions}
           </Select>
         </FormControl>
-      {  <div><pre>{JSON.stringify(this.state.response,null,2)}</pre>
-  <pre>{JSON.stringify(this.state.dangerResponse,null,2)}</pre></div> }
+        <div><pre>Response 1:{JSON.stringify(this.state.response,null,2)}</pre>
+  <pre>Response 2:{JSON.stringify(this.state.dangerResponse,null,2)}</pre></div> 
       </div>
     );
   }

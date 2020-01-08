@@ -42,8 +42,19 @@
 
 }
 
-.manualQuery {
-  width: 50%;
-  margin:30px;
+.dropDowns {
+  margin-top: 100px;
+}
 
+.inforight {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 90px;
+}
+.infoleft {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin: 90px;
 }
